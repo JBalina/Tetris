@@ -1,0 +1,103 @@
+body {
+	background-image: url("images/bckgrnd.jpg");
+	background-repeat: repeat;
+	background-size: 300px, 300px;
+}
+
+.titleImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	display: flex;
+}
+
+.grid {
+	width: 200px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	border-style: groove;
+	border-color: white;
+}
+
+.grid div {
+	height: 20px;
+	width: 20px;
+}
+
+.tetromino {
+	background-color: blue;
+}
+
+.ghost {
+	background-color: white;
+	opacity: 0.5;
+}
+
+.mini-grid {
+	margin-left: 50px;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	border-style: groove;
+	border-color: white;
+}
+
+.mini-grid div {
+	height: 20px;
+	width: 20px;
+}
+
+.held-grid {
+	margin-right: 50px;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	margin-left: auto;
+	border-style: groove;
+	border-color: white;
+}
+
+.held-grid div {
+	height: 20px;
+	width: 20px;
+}
+
+.upcoming-grid {
+	margin-left: 60px;
+	width: 60px;
+	height: 240px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	border-style: groove;
+	border-color: white;
+}
+
+.upcoming-grid div {
+	height: 15px;
+	width: 15px;
+}
+
+.queue {
+	margin-right: auto;
+}
+
+#score-display {
+	text-align: center;
+	color: #B8B8B8;
+}
+
+#start-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
