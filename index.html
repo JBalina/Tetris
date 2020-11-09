@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf=8">
+	<script src="script.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="images/greenTet.png" sizes="16x16">
+	<title>Tetris</title>
+</head>
+<body>
+	<img class="titleImg" src="images/TetrisTitle.png" width="150" height="50"> <br><br>
+
+	<div class="container">
+		<div class="left-hand">
+			<div class="held-grid">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<br>
+			<button id="key-config">Key Bindings...</button>
+		</div>
+		<div class="grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+			<div class="taken invis"></div>
+		</div>
+
+		<div class="queue">
+			<div class="mini-grid">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class= "upcoming-grid">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<h3 id="score-display">Score:<span id="score">0</span></h3>
+	<button id="start-button">Start/Pause</button>
+
+	<div class="modal-bg">
+		<div class="modal">
+			<h3>Controls:</h3>
+			<table>
+				<tr>
+					<td>Move Left:</td>
+					<td>
+						<input id="MLeft-input" class="keybind" type="text" name="left" readonly="readonly" value="ArrowLeft">
+					</td>
+				</tr>
+				<tr>
+					<td>Move Right:</td>
+					<td>
+						<input id="MRight-input" class="keybind" type="text" name="right" readonly="readonly" value="ArrowRight">
+					</td>
+				</tr>
+				<tr>
+					<td>Soft Drop:</td>
+					<td>
+						<input id="soft-input" class="keybind" type="text" name="soft" readonly="readonly" value="ArrowDown">
+					</td>
+				</tr>
+				<tr>
+					<td>Hard Drop:</td>
+					<td>
+						<input id="hard-input" class="keybind" type="text" name="hard" readonly="readonly" value="Spacebar">
+					</td>
+				</tr>
+				<tr>
+					<td>Rotate Left:</td>
+					<td>
+						<input id="RLeft-input" class="keybind" type="text" name="rleft" readonly="readonly" value="x">
+					</td>
+				</tr>
+				<tr>
+					<td>Rotate Right:</td>
+					<td>
+						<input id="RRight-input" class="keybind" type="text" name="rright" readonly="readonly" value="ArrowUp">
+					</td>
+				</tr>
+				<tr>
+					<td>Hold:</td>
+					<td>
+						<input id="hold-input" class="keybind" type="text" name="hold" readonly="readonly" value="z">
+					</td>
+				</tr>
+			</table><br>
+			<button id="submit-keys">Save</button>
+			<span class='modal-close'>X</span>
+		</div>
+	</div>
+</body>
+</html>
